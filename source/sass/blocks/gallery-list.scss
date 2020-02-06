@@ -1,0 +1,28 @@
+.gallery-list {
+  @include list;
+
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 660px;
+  }
+
+  @media (min-width: 960px) {
+    width: 960px;
+  }
+}
+
+.gallery-list__item {
+  background-color: #f2f2f2;
+  width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 37px;
+
+  @media (min-width: 660px) {
+    width: 300px;
+  }
+}

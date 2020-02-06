@@ -1,0 +1,53 @@
+.information {
+  background-color: #f2f2f2;
+}
+
+.information__header {
+  background-color: white;
+  padding-top: 40px;
+  padding-bottom: 3px;
+
+
+  @media (min-width: 660px) {
+    padding-bottom: 51px;
+    padding-top: 43px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 60px;
+    padding-bottom: 75px;
+  }
+}
+
+.information__slogan {
+  font-weight: 300;
+  font-size: 24px;
+  color: #283645;
+  margin-top: 0;
+  text-align: center;
+  line-height: 31px;
+  padding-bottom: 5px;
+
+  @media (min-width: 660px) {
+    font-size: 40px;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    line-height: 1.1;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 50px;
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: 660px) {
+      margin-top: 5px;
+    }
+
+    @media (min-width: 960px) {
+      line-height: 1.2;
+      margin-top: 2px;
+    }
+  }
+}

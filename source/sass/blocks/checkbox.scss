@@ -1,0 +1,121 @@
+.checkbox {
+  padding-bottom: 40px;
+
+  @media (min-width: 960px) {
+    margin: 0;
+    padding: 0;
+    width: 260px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  &:nth-of-type(1) {
+    margin-top: 10px;
+
+    @media (min-width: 660px) {
+      margin-top: 5px;
+    }
+
+    @media (min-width: 960px) {
+      margin-top: 20px;
+      order: 1;
+    }
+  }
+
+  &:nth-of-type(2) {
+    @media (min-width: 960px) {
+      order: 4;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media (min-width: 960px) {
+      order: 2;
+      width: 240px;
+    }
+  }
+
+  &:nth-of-type(4) {
+    @media (min-width: 960px) {
+      order: 5;
+      width: 240px;
+    }
+  }
+
+  &:nth-of-type(5) {
+    @media (min-width: 960px) {
+      order: 3;
+      width: 210px;
+      margin-right: -10px;
+    }
+  }
+
+  &:nth-last-child(1) {
+    padding-bottom: 52px;
+
+    @media (min-width: 960px) {
+      order: 6;
+      padding-bottom: 0;
+      width: 210px;
+      margin-right: -10px;
+    }
+  }
+}
+
+.checkbox__name {
+  font-size: 18px;
+}
+
+
+.checkbox input[type="checkbox"] {
+  opacity: 0;
+}
+
+.checkbox input[type="checkbox"] + label {
+  display: block;
+  padding-left: 69px;
+  padding-bottom: 2px;
+  line-height: 22px;
+  position: relative;
+  cursor: pointer;
+
+  &:hover::before {
+    border: 2px solid #283645;
+    transition-duration: 0.5s;
+  }
+
+  &:active::before {
+    border: 2px solid #d22856;
+  }
+
+  @media (min-width: 660px) {
+    padding-left: 58px;
+    letter-spacing: 0.1px;
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 54px;
+  }
+}
+
+.checkbox input[type="checkbox"] + label::before {
+  content: "";
+  position: absolute;
+  top: -7px;
+  left: 0;
+  width: 38px;
+  height: 38px;
+  background-color: white;
+  border: 2px solid #e5e5e5;
+  border-radius: 2px;
+  cursor: pointer;
+
+  @media (min-width: 960px) {
+    left: -7px;
+  }
+}
+
+.checkbox input[type="checkbox"]:checked + label::before {
+  background: white url("../img/icon-yes.svg") no-repeat;
+  background-position: center;
+}

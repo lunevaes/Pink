@@ -1,0 +1,42 @@
+.platforms-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  padding: 0;
+  margin-top: 25px;
+
+  @media (min-width: 660px) {
+    margin-top: 40px;
+    margin-left: 50px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 67px;
+    margin-left: 30px;
+  }
+}
+
+.platforms-list__item {
+  display: block;
+  width: 80px;
+  height: 65px;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  &--apple {
+    background-image: url("../img/logo-apple.svg");
+
+    @media (min-width: 960px) {
+      background-position: top;
+    }
+  }
+
+  &--android {
+    background-image: url("../img/logo-android.svg");
+  }
+
+  &--microsoft {
+    background-image: url("../img/logo-microsoft.svg");
+  }
+}

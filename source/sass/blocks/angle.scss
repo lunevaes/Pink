@@ -1,0 +1,48 @@
+.angle {
+  &::before {
+    content: "";
+    left: 0;
+    height: 31px;
+    position: absolute;
+    width: 100%;
+    background: linear-gradient(to bottom right, white 50%, transparent 51%);
+    z-index: 5;
+
+    @media (min-width: 660px) {
+      height: 53px;
+    }
+
+    @media (min-width: 960px) {
+      height: 93px;
+    }
+  }
+
+  &--side {
+    &::before {
+      width: 50%;
+      left: 0;
+      background: linear-gradient(to bottom left, white 50%, transparent 51%);
+    }
+  }
+
+  &--reverse {
+    &::after {
+      content: "";
+      top: 0;
+      right: 0;
+      height: 31px;
+      position: absolute;
+      width: 50%;
+      background: linear-gradient(to bottom right, white 50%, transparent 51%);
+      z-index: 5;
+
+      @media (min-width: 660px) {
+        height: 53px;
+      }
+
+      @media (min-width: 960px) {
+        height: 93px;
+      }
+    }
+  }
+}

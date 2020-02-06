@@ -1,0 +1,28 @@
+.page-main__title {
+  font-size: 14px;
+  margin: 0 auto;
+  font-weight: normal;
+  color: #283645;
+  text-align: center;
+  padding: 45px 35px 31px;
+  line-height: 2.1;
+  margin-bottom: 20px;
+
+  @media (min-width: 660px) {
+    font-size: 18px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  &--form {
+    margin-bottom: 0;
+  }
+}
+
+.page-main__title--form span {
+  @include hide;
+
+  @media (min-width: 660px) {
+    position: relative;
+  }
+}

@@ -1,0 +1,376 @@
+.form {
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 660px;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}
+
+.form__header {
+  padding: 44px 15px 35px 16px;
+  line-height: 2.2;
+
+  @media (min-width: 660px) {
+    padding: 90px 0 50px;
+    line-height: 1.8;
+  }
+
+  @media (min-width: 960px) {
+    padding: 90px 12px 35px;
+    width: 820px;
+  }
+}
+
+.form__field {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: column;
+  }
+
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+
+  &--choice {
+    @media (min-width: 660px) {
+      border: 2px solid #e5e5e5;
+      width: 620px;
+      margin: 0 auto;
+    }
+
+    @media (min-width: 960px) {
+      flex-direction: column;
+      width: 940px;
+    }
+  }
+
+  &:nth-of-type(3) {
+    @media (min-width: 660px) {
+      margin-bottom: 28px;
+    }
+  }
+}
+
+.form__set--choice-app .form__field--choice {
+  @media (min-width: 960px) {
+    width: 435px;
+  }
+}
+
+.form__set {
+  border: none;
+  margin-bottom: 20px;
+  padding: 0 20px;
+
+  @media (min-width: 660px) {
+    padding: 0;
+  }
+
+  &--login {
+    @media (min-width: 660px) {
+      order: 1;
+      padding-top: 13px;
+      margin-bottom: 0;
+      padding-right: 20px;
+    }
+
+    @media (min-width: 960px) {
+      padding-top: 47px;
+      padding-right: 0;
+    }
+  }
+
+  &--adress {
+    margin-top: 32px;
+    letter-spacing: 0.3px;
+    margin-bottom: 40px;
+
+    @media (min-width: 660px) {
+      order: 3;
+      padding-top: 40px;
+      margin-top: 0;
+      margin-bottom: 58px;
+    }
+
+    @media (min-width: 960px) {
+      min-width: 940px;
+      display: flex;
+      flex-direction: row;
+      padding-top: 36px;
+    }
+  }
+
+  &--choice-app {
+    background-color: #f2f2f2;
+
+    @media (min-width: 660px) {
+      order: 2;
+      background-color: white;
+      margin-top: 39px;
+    }
+
+    @media (min-width: 960px) {
+      width: 430px;
+      padding-left: 5px;
+      margin-left: 61px;
+      margin-top: 42px;
+    }
+  }
+
+  &--choice-ach {
+    background-color: #f2f2f2;
+
+    @media (min-width: 660px) {
+      order: 4;
+      background-color: white;
+      margin-top: 8px;
+    }
+
+    @media (min-width: 960px) {
+      min-width: 940px;
+      margin-top: 7px;
+    }
+  }
+
+  &--letter {
+    text-align: center;
+    padding: 0;
+    margin: 33px 0 20px;
+
+    @media (min-width: 660px) {
+      order: 5;
+      margin-top: 40px;
+    }
+
+    @media (min-width: 960px) {
+      min-width: 940px;
+      margin-top: 40px;
+      margin-bottom: 10px;
+    }
+  }
+}
+
+.form__top {
+  &--letter {
+    @media (min-width: 660px) {
+      margin: 0 auto;
+      padding: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: white;
+      margin-top: -10px;
+    }
+
+    @media (min-width: 960px) {
+      padding: 0 10px;
+    }
+  }
+}
+
+.form__title {
+  line-height: 2;
+  text-transform: uppercase;
+  color: #d22856;
+  padding-left: 20px;
+
+  @media (min-width: 660px) {
+    padding-top: 25px;
+    padding-right: 22px;
+    padding-left: 18px;
+  }
+
+  @media (min-width: 960px) {
+    padding-top: 11px;
+    padding-left: 0;
+    margin-left: 20px;
+  }
+
+  &--name {
+    @media (min-width: 960px) {
+      padding-top: 21px;
+      margin-left: 0;
+      padding-right: 20px;
+    }
+  }
+
+  &--choice {
+    line-height: 1.4;
+    padding: 35px 20px 14px;
+    text-align: center;
+
+    @media (min-width: 660px) {
+      margin: 0 auto;
+      padding: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: white;
+      margin-top: -10px;
+      align-self: center;
+    }
+
+    @media (min-width: 960px) {
+      padding: 0 25px;
+    }
+  }
+
+  &--letter {
+    padding-left: 0;
+
+    @media (min-width: 660px) {
+      padding-left: 20px;
+      line-height: 0.1px;
+    }
+
+    @media (min-width: 960px) {
+      margin-left: 0;
+    }
+  }
+
+  &--contacts {
+    @include hide;
+
+    @media (min-width: 660px) {
+      line-height: 1.35;
+      letter-spacing: 0.39px;
+      text-align: center;
+      position: relative;
+      margin: 0 auto;
+      padding: 0;
+      padding-left: 30px;
+      padding-right: 30px;
+      background-color: white;
+      margin-top: -10px;
+    }
+  }
+
+  &--contact {
+    @media (min-width: 660px) {
+      padding-top: 10px;
+      padding-bottom: 16px;
+    }
+  }
+}
+
+.form__submit {
+  display: block;
+  padding: 21px 48px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  background-color: #2aab6d;
+  color: white;
+  border: none;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    margin: 0;
+    padding: 21px 57px;
+  }
+
+  &:hover {
+    background-color: #1c9b5e;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    background-color: #1c9b5e;
+    color: #61b98f;
+  }
+
+  &:disabled {
+    background-color: #e5e5e5;
+  }
+}
+
+.form__clarification {
+  text-transform: uppercase;
+  text-align: center;
+  margin-top: 42px;
+  margin-bottom: 17px;
+
+  @media (min-width: 660px) {
+    margin-bottom: 0;
+    margin-top: 25px;
+  }
+}
+
+.form__star {
+  color: #d22856;
+}
+
+.form__apply {
+  @media (min-width: 660px) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    order: 6;
+    width: 620px;
+    margin: auto;
+    padding-top: 47px;
+    padding-bottom: 50px;
+  }
+
+  @media (min-width: 960px) {
+    min-width: 940px;
+    padding-bottom: 0;
+    padding-top: 55px;
+  }
+}
+
+
+.form__list {
+  width: 320px;
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 100%;
+    padding-left: 60px;
+    padding-top: 31px;
+    padding-bottom: 10px;
+  }
+
+  @media (min-width: 960px) {
+    padding-left: 0;
+    padding-top: 48px;
+    margin-left: 63px;
+    padding-bottom: 14px;
+  }
+
+  &--choice-ach {
+    @media (min-width: 660px) {
+      padding-top: 30px;
+      padding-bottom: 2px;
+    }
+
+    @media (min-width: 960px) {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin: 0;
+      padding: 12px 63px 43px;
+    }
+  }
+}
+
+.form__container {
+  @media (min-width: 960px) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+}
+
+.form__additional {
+  @include hide;
+
+  @media (min-width: 960px) {
+    position: relative;
+  }
+}

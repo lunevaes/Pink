@@ -1,0 +1,142 @@
+.intro {
+  @media (min-width: 660px) {
+    background-image: url("../img/iphone-hand-tablet@1x.png");
+    background-repeat: no-repeat;
+    background-position: calc(50%) bottom;
+  }
+
+  @media (min-width: 960px) {
+    background-image: url("../img/iphone-hand-desktop@1x.png");
+    background-position: calc(50% + 70px) bottom;
+  }
+}
+
+.intro__mobile {
+  @include base-width;
+  height: 396px;
+  background-image: url("../img/iphone-hand-mobile@1x.png");
+  background-position: bottom left;
+  background-repeat: no-repeat;
+
+  @media (min-width: 660px) {
+    display: none;
+  }
+
+  @media (min-width: 960px) {
+    display: none;
+  }
+}
+
+.intro__download {
+  background-color: #1d2631;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media (min-width: 660px) {
+    width: 355px;
+    margin-top: 90px;
+    margin-bottom: 75px;
+    background-color: transparent;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 110px;
+    margin-bottom: 0;
+    background-color: transparent;
+  }
+}
+
+.intro__button {
+  text-align: center;
+  margin-top: 25px;
+  color: white;
+  border: white solid 3px;
+  border-radius: 30px;
+  padding: 15px 35px;
+
+  &:hover {
+    color: #d22856;
+    background-color: white;
+    transition-duration: 0.5s;
+  }
+
+  &:active {
+    color: #f1becc;
+  }
+
+  @media (min-width: 660px) {
+    padding: 14px 45px;
+    margin-left: -10px;
+  }
+
+  @media (min-width: 960px) {
+    padding: 11px 30px;
+    margin-left: -55px;
+    margin-top: 80px;
+    font-size: 20px;
+    letter-spacing: 0.5px;
+  }
+}
+
+.intro__text {
+  width: 270px;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 32px;
+  margin-top: 19px;
+  line-height: 1.6;
+
+  @media (min-width: 660px) {
+    width: 330px;
+    margin-top: 32px;
+    margin-left: -12px;
+    letter-spacing: 0.9px;
+    font-size: 16px;
+  }
+
+  @media (min-width: 960px) {
+    margin-top: 49px;
+    margin-left: -55px;
+    letter-spacing: 0.95px;
+    line-height: 1.4;
+    font-size: 16px;
+    padding-bottom: 124px;
+    margin-bottom: 0;
+  }
+}
+
+.intro__wrapper {
+  margin: 0 auto;
+
+  @media (min-width: 660px) {
+    width: 660px;
+  }
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}
+
+.intro__title-tablet {
+  @include hide;
+  font-size: 40px;
+  text-align: center;
+  font-weight: 300;
+
+  @media (min-width: 660px) {
+    margin: 0 auto;
+    position: relative;
+    width: 200px;
+    height: 150px;
+    margin-left: 70px;
+    line-height: 1.2;
+  }
+
+  @media (min-width: 960px) {
+    font-size: 50px;
+    letter-spacing: -0.3px;
+    width: 300px;
+    margin-left: 0;
+  }
+}

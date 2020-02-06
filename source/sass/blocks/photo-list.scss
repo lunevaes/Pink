@@ -1,0 +1,71 @@
+.photo-list {
+  @include base-width;
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}
+
+.photo-list__title {
+  @media (min-width: 660px) {
+    width: 450px;
+    margin: 0 auto;
+    font-size: 16px;
+    line-height: 2;
+    padding: 90px 0 75px 0;
+  }
+
+  @media (min-width: 960px) {
+    width: 590px;
+    letter-spacing: -0.05px;
+    padding-left: 10px;
+    padding-bottom: 85px;
+    line-height: 1.8;
+    font-size: 18px;
+  }
+}
+
+.photo-list__item {
+  background-color: #f2f2f2;
+  width: 280px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  margin: 0 auto;
+  margin-bottom: 37px;
+
+  @media (min-width: 660px) {
+    width: 300px;
+  }
+}
+
+.photo-list__panorama-marker {
+  margin: 0;
+  position: absolute;
+  font-size: 12px;
+  font-weight: 700;
+  top: 0;
+  right: 1px;
+  padding: 10px 20px;
+  color: white;
+  text-transform: uppercase;
+  background-color: #d22856;
+
+  @media (min-width: 660px) {
+    top: 57px;
+    right: -1px;
+  }
+
+  @media (min-width: 960px) {
+    top: 55px;
+  }
+}
+
+.photo-list__panorama-wrapper {
+  @include base-width;
+  margin-top: -5px;
+
+  @media (min-width: 960px) {
+    width: 940px;
+  }
+}

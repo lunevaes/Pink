@@ -1,0 +1,28 @@
+.map {
+  position: relative;
+  z-index: 1;
+  height: 200px;
+
+  @media (min-width: 660px) {
+    height: 373px;
+  }
+
+  @media (min-width: 960px) {
+    height: 500px;
+    padding-bottom: 0;
+  }
+}
+
+.map iframe {
+  height: 200px;
+  width: 100%;
+  border: 0;
+
+  @media (min-width: 660px) {
+    height: 373px;
+  }
+
+  @media (min-width: 960px) {
+    height: 500px;
+  }
+}
